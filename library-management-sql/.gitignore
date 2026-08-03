@@ -1,0 +1,8 @@
+# Generated database file (rebuild it locally with schema.sql + seed_data.sql)
+*.db
+*.sqlite
+*.sqlite3
+
+# OS files
+.DS_Store
+Thumbs.db
