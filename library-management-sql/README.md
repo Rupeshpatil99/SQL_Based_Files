@@ -111,8 +111,4 @@ See [`queries.sql`](./queries.sql) for the full list, including:
 - Add a `fines` table for overdue penalties
 - Add a `reservations` table for books that are on hold
 - Build a small front-end (Python/Flask or a notebook) on top of this database
-- Port the schema to PostgreSQL and deploy on Supabase/Railway
-
-## License
-
-This project is open source under the [MIT License](LICENSE).
+- Port the schema to PostgreSQL and deploy on Supabase
