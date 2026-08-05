@@ -106,9 +106,4 @@ See [`queries.sql`](./queries.sql) for the full list, including:
 - Books that have never been borrowed
 - Average borrowing duration
 
-## Possible Extensions
 
-- Add a `fines` table for overdue penalties
-- Add a `reservations` table for books that are on hold
-- Build a small front-end (Python/Flask or a notebook) on top of this database
-- Port the schema to PostgreSQL and deploy on Supabase
