@@ -1,0 +1,26 @@
+CREATE DATABASE B042;
+USE B042;
+
+
+SHOW TABLES;
+# SINGLE LINE COMMENT
+-- SINGLE LINE COMMENT
+/* RUPESH
+  MOHIT
+  KARTIK*/
+  
+  CREATE TABLE  student_42(
+   ID INT,
+   FirstName VARCHAR(200),
+   Age INT,
+   DOB DATE);
+   
+   SHOW TABLES;
+   SELECT* FROM student_42;
+   
+   INSERT INTO student_42 VALUES(1,'Mohit',23,'2004-06-23'),
+								(2,'Rupesh',21,'2004-05-22'),
+                                (3,'Akshay',23,'2004-06-20'),
+                                (4,'Kartik',23,'2004-07-13');
+   
+   
