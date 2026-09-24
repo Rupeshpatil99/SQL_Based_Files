@@ -1,0 +1,56 @@
+-- DDL DATA DEFINATION LANGUAGE--
+
+
+-- 1 CREATE
+CREATE TABLE emp(ID INT,FirstName VARCHAR(40), salary INT);
+
+SELECT *FROM emp;
+DESC emp;
+
+INSERT INTO emp VALUES(1,'RUPESH',NULL);
+
+-- 2 RENAME
+RENAME TABLE emp TO employees;
+DESC employees;
+
+
+-- 3 ALTER
+-- ADD COLUMNS
+-- DELETE ANY COLUMNS
+-- RENAME COLUMNS
+-- CHANGE DATA TYPE OF ANY COLUMNS
+
+# ADD COL/s
+SELECT * FROM employees;
+ALTER TABLE employees ADD COLUMN LOCATION VARCHAR(50),
+                      ADD COLUMN DOB DATE,
+                      ADD COLUMN JOINDate VARCHAR(40);
+ALTER TABLE employees   ADD COLUMN DEPT VARCHAR(60);
+                      
+#  DELETE COL/s
+ALTER TABLE employees DROP COLUMN DOB ;
+	
+                    
+ALTER TABLE employees   DROP COLUMN DEPT,
+						DROP COLUMN JOINDate;
+
+
+#RENAME
+ALTER TABLE employees RENAME COLUMN LOCATION TO city;
+
+
+
+#CHANGING  DATA TYPE OF COLUMMN
+
+DESC employees;
+ALTER TABLE employees modify FirstName VARCHAR (100);
+
+
+
+-- TRUNCATE
+SELECT * FROM employees;
+truncate employees;
+
+
+-- DROP
+DROP TABLES employees;
