@@ -61,34 +61,6 @@ library-management-sql/
 - **SQLite** — zero-setup, single-file database, perfect for learning
   (the SQL is standard enough to adapt to MySQL/PostgreSQL with minor tweaks)
 
-## How to Run
-
-1. Install SQLite (if you don't have it already):
-   ```bash
-   # macOS
-   brew install sqlite3
-   # Ubuntu/Debian
-   sudo apt install sqlite3
-   ```
-2. Build the database:
-   ```bash
-   sqlite3 library.db < schema.sql
-   sqlite3 library.db < seed_data.sql
-   ```
-3. Run the practice queries:
-   ```bash
-   sqlite3 library.db < queries.sql
-   ```
-   Or open an interactive session and explore:
-   ```bash
-   sqlite3 library.db
-   sqlite> .tables
-   sqlite> SELECT * FROM books;
-   ```
-
-> No SQLite installed? You can also paste `schema.sql` and `seed_data.sql`
-> into an online SQL sandbox like [SQLite Online](https://sqliteonline.com/).
-
 ## What This Project Demonstrates
 
 - **Schema design** — primary keys, foreign keys, `ON DELETE CASCADE`,
@@ -106,13 +78,4 @@ See [`queries.sql`](./queries.sql) for the full list, including:
 - Books that have never been borrowed
 - Average borrowing duration
 
-## Possible Extensions
 
-- Add a `fines` table for overdue penalties
-- Add a `reservations` table for books that are on hold
-- Build a small front-end (Python/Flask or a notebook) on top of this database
-- Port the schema to PostgreSQL and deploy on Supabase/Railway
-
-## License
-
-This project is open source under the [MIT License](LICENSE).
